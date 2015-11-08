@@ -48,62 +48,62 @@ atau anda juga dapat langsung melakukan konfigurasi di file rajaongkir.php di fo
 
 Ambil data provinsi
 ```php
-$data = RajaOngkir\RajaOngkir::Provinsi()->all();
+$data = RajaOngkir::Provinsi()->all();
 ```
 
 Ambil jumlah provinsi
 ```php
-$data = RajaOngkir\RajaOngkir::Provinsi()->count();
+$data = RajaOngkir::Provinsi()->count();
 ```
 
 Ambil data provinsi berdasarkan id provinsi
 ```php
-$data = RajaOngkir\RajaOngkir::Provinsi()->find($id);
+$data = RajaOngkir::Provinsi()->find($id);
 ```
 
 Ambil data provinsi berdasarkan nama provinsi
 ```php
-$data = RajaOngkir\RajaOngkir::Provinsi()->search('province', $name = "ja")->get();
+$data = RajaOngkir::Provinsi()->search('province', $name = "ja")->get();
 ```
 
 Ambil data kota
 ```php
-$data = RajaOngkir\RajaOngkir::Kota()->all();
+$data = RajaOngkir::Kota()->all();
 ```
 
 Ambil jumlah kota
 ```php
-$data = RajaOngkir\RajaOngkir::Kota()->count();
+$data = RajaOngkir::Kota()->count();
 ```
 
 Ambil data kota berdasarkan id kota
 ```php
-$data = RajaOngkir\RajaOngkir::Kota()->find($id);
+$data = RajaOngkir::Kota()->find($id);
 ```
 
 Ambil data kota berdasarkan nama kota
 ```php
-$data = RajaOngkir\RajaOngkir::Kota()->search('city_name', $name = "banyu")->get();
+$data = RajaOngkir::Kota()->search('city_name', $name = "banyu")->get();
 ```
 
 Ambil data kota berdasarkan provinsi
 ```php
-$data = RajaOngkir\RajaOngkir::Kota()->byProvinsi($provinsi_id)->get();
+$data = RajaOngkir::Kota()->byProvinsi($provinsi_id)->get();
 ```
 
 Ambil jumlah kota berdasarkan provinsi
 ```php
-$data = RajaOngkir\RajaOngkir::Kota()->byProvinsi($provinsi_id)->count();
+$data = RajaOngkir::Kota()->byProvinsi($provinsi_id)->count();
 ```
 
 Ambil data kota berdasarkan nama kota di suatu provinsi
 ```php
-$data = RajaOngkir\RajaOngkir::Kota()->byProvinsi($provinsi_id)->search('city_name', $name)->get();
+$data = RajaOngkir::Kota()->byProvinsi($provinsi_id)->search('city_name', $name)->get();
 ```
 
 Ambil Biaya Pengiriman
 ```php
-$data = RajaOngkir\RajaOngkir::Cost([
+$data = RajaOngkir::Cost([
 	'origin' 		=> 501, // id kota asal
 	'destination' 	=> 114, // id kota tujuan
 	'weight' 		=> 1700, // berat satuan gram
