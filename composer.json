@@ -1,0 +1,23 @@
+{
+    "name": "rizalafani/rajaongkirlaravel",
+    "description": "Raja Ongkir API Laravel 5",
+    "keywords": [
+        "rajaongkir", "application programming interface", "laravel"
+    ],
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Ahmad Rizal Afani",
+            "email": "ahmadrizalafani@gmail.com"
+        }
+    ],
+    "autoload": {
+    	"psr-4": {
+    		"rizalafani\\rajaongkirlaravel\\": "src/"
+    	}
+    },
+    "require": {
+    	"illuminate/support": "~5"
+    }
+}
