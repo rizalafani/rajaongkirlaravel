@@ -35,12 +35,12 @@ jika anda menggunakan command artisan diatas, anda akan dibuatkan file rajaongki
 
 Tambahkan kode berikut di file .env untuk konfigurasi API rajaongkir
 ```
-RAJAONGKIR_ENDPOINTAPI=isi_endpointapi_akun_anda_disini
+RAJAONGKIR_ENDPOINTAPI=isi_base_url_api_akun_anda_disini
 RAJAONGKIR_APIKEY=isi_api_key_anda_disini
 ```
 atau anda juga dapat langsung melakukan konfigurasi di file rajaongkir.php di folder config seperti kode berikut.
 ```php
-'end_point_api' => 'isi_endpointapi_akun_anda_disini',
+'end_point_api' => 'isi_base_url_api_akun_anda_disini',
 'api_key' => 'isi_api_key_anda_disini',
 ```
 
