@@ -19,12 +19,20 @@ atau
 
 Tambahkan service provider ke config/app.php
 ```php
-rizalafani\rajaongkirlaravel\RajaOngkirServiceProvider::class,
+'providers' => [
+	....
+	
+	rizalafani\rajaongkirlaravel\RajaOngkirServiceProvider::class,
+]
 ```
 
 Tambahkan juga aliasnya ke config/app.php
 ```php
-'RajaOngkir' => rizalafani\rajaongkirlaravel\RajaOngkirFacade::class,
+'aliases' => [
+	....
+	
+	'RajaOngkir' => rizalafani\rajaongkirlaravel\RajaOngkirFacade::class,
+]
 ```
 
 Buat file rajaongkir.php di folder config secara manual atau jalankan command artisan
