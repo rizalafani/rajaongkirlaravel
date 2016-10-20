@@ -13,8 +13,8 @@ abstract class Api {
 	protected $apiKey;
 
 	public function __construct(){
-		$this->endPointAPI = config('rajaongkir.end_point_api', 'http://rajaongkir.com/api/starter');
-		$this->apiKey = config('rajaongkir.api_key');
+		$this->endPointAPI = env('RAJAONGKIR_ENDPOINTAPI');
+		$this->apiKey = env('RAJAONGKIR_APIKEY');
 	}
 
 	public function all(){
